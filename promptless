@@ -5,8 +5,9 @@ WD=[34m\${PWD}/
 AR=[95m➜[0m
 UR=[93m${USER}
 RU=[91mROOT
+HS=[95m#[0m
 
 case $(id -u) in
-0) export PS1="$RU $EC $WD $AR ";;
+0) export PS1="$RU $EC $WD $HS ";;
 *) export PS1="$UR $EC $WD $AR ";;
 esac 
